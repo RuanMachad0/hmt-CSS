@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Exer-01/Base/org.css">
+    <style>
+         a:hover {
+            color: aqua;
+        }
+        a:visited {
+            color: green;
+        }
+        a:active {
+          color: red;
+        }
+        a::before {
+          content: '-';
+        }
+        a::after {
+            content: '[link]';
+            color: #7272706c;
+        }
+       
+    </style>
+    <title>personalizando links</title>
+</head>
+<body>
+    <main>
+        <h1>Exercicío de personalizar links</h1>
+        <ul type="none">
+            <li><a href="http://gustavoguanabara.github.io">GitHub</a></li>
+            <li><a href="http://youtube.com/cursoemvideo/">Youtube</a></li>
+            <li><a href="http://www.cursoemvideo.com">CursoemVideo</a></li>
+        </ul>
+        <h2>pseudo-classes</h2>
+        <h3>visited</h3>
+        <p>Visited deixa os links que já foram visitados com algum detalhe diferente.</p>
+        <h4>Exemplo</h4>
+<pre>
+<code><spam>a:</spam><spam id="core">visited</spam> <span>{</span>
+   <spam id="co">color</spam><spam>:</spam> green<span>;</span>
+<span>}</span></code>
+</pre>
+
+<h3>active</h3>
+<p>Active faz que qquando tal codogo cor ativado(clicado) seja mudado algo.</p>
+<h4>Exemplo</h4>
+<pre>
+<code><spam>a:</spam><spam id="core">active</spam> <span>{</span>
+   <spam id="co">color</spam><spam>:</spam> red<span>;</span>
+<span>}</span></code>
+</pre>
+
+<h3>before/after</h3>
+<p>Retrado como antes e depois, utilizado para colocar algo antes ou depois de algum codigo para complementação.</p>
+<h4>Exemplo</h4>
+<pre>
+<code><spam>a::</spam><spam id="core">before</spam> <span>{</span>
+   <spam id="co">content</spam><spam>:</spam>'-'<span>;</span>
+<span>}</span>
+
+<spam>a::</spam><spam id="core">after</spam> <span>{</span>
+   <spam id="co">content</spam><spam>:</spam>'[link]'<span>;</span>
+   <spam id="co">color</spam><spam>:</spam> #7272706c<span>;</span>
+<span>}</span></code>
+</pre>
+
+<h3>hover</h3>
+<p>Já sabemos como ele funciona porem iremos utiliza-lo também para persolalizar link.</p>
+<h4>Exemplo</h4>
+<pre><code><spam>a:</spam><spam id="core">hover</spam> <span>{</span>
+   <spam id="co">color</spam><spam>:</spam> aqua<span>;</span>
+<span>}</span></code>
+</pre>
+
+    </main>
+</body>
+</html>

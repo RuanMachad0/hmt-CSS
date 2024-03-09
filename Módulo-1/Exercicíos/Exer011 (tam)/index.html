@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Exer001 (Olá)/org.css">
+    <link rel="shortcut icon" href="../Exer004 (icone)/barba.ico" type="image/x-icon">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Exercicío de tamanhos</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamnho do seu navegador</p>
+
+    <code>
+        <ins>&lt;picture&gt;</ins><br>
+        <ins id="c1">&lt;source <mark id="cor1">media="(max-width:1000px)" srcset="<mark id="cor4">link-da-imagem</mark>" type="<mark id="cor4">tipo-da-imagem</mark>"</mark>&gt;</ins><br>
+        <ins id="c1">&lt;img <mark id="cor2">src="<mark id="cor4">link-da-imagem</mark>" alt="<mark id="cor4">apelido</mark>"</mark>&gt;</ins><br>
+        <ins>&lt;/picture&gt;</ins><br>
+    </code>
+    
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto.p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto.m.png" sizes="image/png">
+        <img src="imagens/foto.g.png" alt="foto-G">
+    </picture>
+
+     <h2>Link de audio</h2>
+<!---->
+     <code>
+        <pre>
+  <ins>&lt;audio <mark id="cor1">preload="metadata" autoplay controls loop</mark>&gt;</ins>
+     <ins id="c1">&lt;source <mark id="cor2">src="<mark      id="cor4">link-do-audio</mark>" type="<mark  id="cor4">tipo-do-audio</mark>"</mark>&gt;</ins>
+     <ins id="c1">&lt;p&gt;<spam>Infelismente não foi possivel caregar o audio</spam>&lt;/p&gt;</ins>
+  <ins>&lt;/audio&gt;</ins>
+ 
+        </pre>
+     </code>
+        <!--mpeg ogg wav-->
+     <audio preload="metadata" autoplay controls loop>
+            <source src="midias/Mariposa - Quincas Moreira.mp3" type="audio/mpeg">
+            <p>Infelismente não foi possivel carregar o audio clique <a href="midias/Mariposa - Quincas Moreira.mp3" download="Mariposa - Quincas Moreira" type="audio/mpeg"> aqui</a> para fazer o download do audio</p>
+     </audio>
+</body>
+</html>

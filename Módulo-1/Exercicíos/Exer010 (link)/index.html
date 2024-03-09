@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Exer001 (Olá)/org.css"/>
+    <style>
+    </style>
+    <title>Link</title>
+</head>
+<body>
+    <h1>Exercicíos de Links</h1>
+    <h2>Link Externo</h2>
+    <code>
+        <!--exemplo-->
+        &lt;p&gt;<ins style="color: rgb(255, 0, 0);">&lt;a <mark style="background-color: aqua;">href="!--link--!"</mark> <mark style="background-color: rgb(0, 255, 34);">target="blank" rel="external"</mark>&gt;</ins><spam style="color: rgb(0, 153, 0)">!--frase que vai ganhar o link--!</spam><ins style="color: rgb(255, 0, 0);">&lt;/a&gt;</ins>&lt;/p&gt;
+    </code>
+ 
+    <h4>Exemplo</h4>
+
+    <p>Link para o<a href="https://gustavoguanabara.github.io/" target="_blank" rel="external"> repositório públibo no gitHub</a> do Gustavo guanabara ou também pode acessar direto pelo 
+    <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">youtube</a>. </p>
+
+    <h2>Link Interno</h2>
+    <h3>Normal</h3>
+    <code>
+        <p>pode ser utilizado <mark style="background-color: rgb(182, 156, 255);">target="self"</mark> para se manter na mesma pagina.</p>
+        &lt;p&gt;<ins style="color: rgb(255, 0, 0);">&lt;a <mark style="background-color: aqua;">href="!--link--!"</mark> <mark style="background-color: rgb(0, 255, 0);">rel="next"</mark>&gt;</ins><spam style="color: rgb(0, 153, 0);">!--frase que vai ganhar o link--!</spam><ins style="color: rgb(255, 0, 0);">&lt;/a&gt;</ins>&lt;/p&gt;
+    </code>
+
+    <h4>Exemplo</h4>
+
+    <p>Para acessar a segunda pagina clique <a href="pag2.html">aqui</a>.</p>
+
+    <h3>Dentro de uma Pasta</h3>
+
+    <code>
+        &lt;p&gt;<ins style="color: rgb(255, 0, 0);">&lt;a <mark style="background-color: aqua;">href="!--pasta--!<mark>/</mark>!--link--!"</mark> <mark style="background-color: rgb(0, 255, 0);">rel="next"</mark>&gt;</ins><spam style="color: rgb(0, 153, 0);">!--frase que vai ganhar o link--!</spam><ins style="color: rgb(255, 0, 0);">&lt;/a&gt;</ins>&lt;/p&gt;
+    </code>
+
+    <h4>Exemplo</h4>
+
+    <p>Para acessar a terceira pagina clique <a href="pasta/pag3.html" rel="next">aqui</a>.</p>
+
+    <h2>Link de Download</h2>
+    
+    <code>
+        &lt;p&gt;  <ins>&lt;a <mark id="cor1">href="<mark id="cor4">!link.da.pasta!</mark>"</mark> <mark id="cor2">Download="<mark id="cor4">!nome.da.pasta!</mark>"</mark> <mark id="cor3"> type="<mark id="cor4">!formato.do.download!</mark>"</mark>&gt;</ins><spam>!palavra!</spam><ins>&lt;/a&gt;</ins>  &lt;/p&gt;
+    </code>
+
+   <p><strong>Baixar PDF da aula:</strong> </p>
+   <ul type="disc">    
+        <li><a href="livro/aula10pdf.pdf" download="aula10pdf" type="application/pdf">DOWNLOAD PDF</a></li>
+        <li><a href="livro/aula10pdfz.zip" download="aula10pdfz" type="application/zip">DOWNLOAD ZIP<a></li>
+   </ul>
+
+</body>
+</html>
