@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'titulo';
+    src: url('superocean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family:'padrao';
+    src: url('Raillinc.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family:'figura';
+    src: url('Snoopy_Dings.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
 
 
 :root {
@@ -7,7 +25,12 @@
     --cor2: #B4BEC9;
     --cor3: #159A9C;
     --cor4: #002333;
+--titulo-principal:'titulo', cursive, sans-serif;
+--snoopy: 'figura', cursive, sans-serif;
+--titulo-padrao: 'padrao', cursive, sans-serif;
+--texto-padrao: Arial, helvetica, sans-serif;
 }
+
 
 /*ORGANIZÇÃO DE TABELA DE EXEMPLO NA PRATICA*/
 pre{
@@ -30,5 +53,45 @@ span {
 .amare {
     color: rgb(255, 255, 65);
 }
-
 /*FINAL*/
+
+
+header {
+    width: 800px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+}
+header h1 {
+    font-family: var(--titulo-principal);
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+header p {
+    margin: auto;
+    padding: 10px;
+}
+
+/**/
+
+body {
+    background-color: var(--cor1);
+    text-align: justify;
+    font-family: var(--texto-padrao);
+    text-indent: 20px;
+}
+
+/**/
+
+main {
+    width: 800px;
+}
+
+main h1 {
+    font-family: var(--titulo-padrao);
+    color: var(--cor4);
+}
+main h2 {
+    font-family: var(--titulo-padrao);
+    color: var(--cor3);
+}
