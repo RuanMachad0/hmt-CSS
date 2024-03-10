@@ -25,10 +25,11 @@
     --cor2: #B4BEC9;
     --cor3: #159A9C;
     --cor4: #002333;
---titulo-principal:'titulo', cursive, sans-serif;
---snoopy: 'figura', cursive, sans-serif;
---titulo-padrao: 'padrao', cursive, sans-serif;
---texto-padrao: Arial, helvetica, sans-serif;
+    
+    --titulo-principal:'titulo', cursive, sans-serif;
+    --snoopy: 'figura', cursive, sans-serif;
+    --titulo-padrao: 'padrao', cursive, sans-serif;
+    --texto-padrao: Arial, helvetica, sans-serif;
 }
 
 
