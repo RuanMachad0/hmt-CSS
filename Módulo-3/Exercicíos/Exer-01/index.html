@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+     <style>
+         p#teste {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            text-align: right ;
+            bottom: 80px;
+            font-weight: 900;
+            font-size: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: #B4BEC9;
+          }
+          a:hover {
+            color: #159A9C;
+            text-decoration: underline;
+          }
+     </style>
+    <title>imagens de fundo</title>
+</head>
+<body>
+    <header>
+        <h1>Background</h1>
+        <p>Exercicío número 1 sobre background de imagens</p>
+    </header>
+    <main>  
+        <h1>Sobre background</h1>  
+        <p id="teste"><a href="testes/teste-01.html">Teste</a></p>
+        <h2>Tipos de background</h2>
+        <p>Até o momento já vimos "<strong>background-color:;</strong>" que inclui uma cor ao fundo do site, "<strong>background-image: linear-gradient();</strong>" que coloca um gradient ao fundo do site e por fim "<strong>backgrond-image:;</strong>" que tranforma uma imagem em um fundo de tela.</p>
+        <h3>background-repeat</h3>
+        <p>Este codigo de <strong>CSS</strong> da uma propriedade ao background-image, sendo se a imagem for menor que o fundo que a imagem foi aplicada ela será replicada até encher a o fundo sempre iniciando no canto superior esquerdo.</p>
+        <ul type="none">
+            <li><strong>Tags</strong></li>
+            <li>repeat = repita</li>
+            <li>no-repeat = não repita</li>
+            <li>repeat-x = repita em uma linha</li>
+            <li>repeat-y = repita em uma coluna</li>
+        </ul>
+        <h4>Exemplo</h4>
+<pre>
+<code><span class="azul">background-repeat</span><span>:</span> no-repeat<span>;</span></code>
+</pre>
+        <h3>background-position</h3>
+        <p>Já este codigo <strong>CSS</strong> permite ajustar o inicio da imagem, para as imagens que são maiores do que o fundo que foram aplicadas.</p>
+        <ul type="none">
+            <strong>Tags</strong>
+            <li>left top = inicio padrão</li>
+            <li>left center = esquerda ao centro</li>
+            <li>center center = centralizado</li>
+            <li>right bottom = canto inferior direito</li>
+        </ul>
+        <h4>Exemplo</h4>
+        <pre>
+<code><span class="azul">Background-position</span><span>:</span> center center<span>;</span></code></pre>
+            <h3>background-size</h3>
+            <p>Codigo <strong>CSS</strong> que define tamanho á iamgem que fica ao fundo no background.</p>
+            <ul type="none">
+                <strong>Tags</strong>
+                <li>%,px... = tamanho padrão</li>
+                <li>contain = tamanho da view port porém acaba sendo distorcida</li>
+                <li>cover = tamanho da view port sem distorções</li>
+            </ul>
+            <h4>Exemplo</h4>
+            <pre><code><span class="azul">Background-size</span><span>:</span> contain<span>;</span></code></pre>
+            <h3>background-attachment</h3>
+            <p>Este codigo <strong>CSS</strong> define o comportamento do backgrond quando se "rola" a tela.</p>
+            <ul type="none">
+                <strong>Tags</strong>
+                <li>scroll = se movimenta junto com o conteudo</li>
+                <li>fixed = se mantem fixo</li>
+            </ul>
+            <h4>Exemplo</h4>
+<pre><code><span class="azul">Background-attachment</span><span>:</span> fixed<span>;</span></code></pre>
+            <h3>short-hand background</h3>
+            <p>Resumindo os codigos acima, nessa sequencia:</p>
+            <p>color -> image -> position -> repeat -> size -> attachment</p>
+            <h4>Exemplo</h4>
+<pre>
+<code><span class="azul">Background</span><span>:</span> black url('../imagens/wallpaper002.jpg') center center
+no-repeat contain fixed<span>;</span></code></pre>
+
+    </main>
+</body>
+</html>

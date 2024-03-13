@@ -12,13 +12,11 @@
     font-weight: normal;
     font-style: normal;
 } 
-@font-face {
-    font-family:'figura';
-    src: url('Snoopy_Dings.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} 
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 :root {
     --cor1: #DEEFE7;
@@ -27,7 +25,6 @@
     --cor4: #002333;
     
     --titulo-principal:'titulo', cursive, sans-serif;
-    --snoopy: 'figura', cursive, sans-serif;
     --titulo-padrao: 'padrao', cursive, sans-serif;
     --texto-padrao: Arial, helvetica, sans-serif;
 }
@@ -37,8 +34,10 @@
 pre{
     background-color: rgb(14, 14, 14);
     color: rgb(119, 74, 161);
-    width: 310px;
+    font-size: 14px;
+    margin: auto;
 }
+
 span {
     color: white;
 }
@@ -58,41 +57,75 @@ span {
 
 
 header {
-    width: 800px;
-    height: 200px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    height: 150px;
+    min-width: 300px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
 }
 header h1 {
     font-family: var(--titulo-principal);
-    color: white;
+    color: var(--cor4);
     margin: auto;
-    padding: 10px;
+    padding-top: 30px;
+   text-align: center;
 }
 header p {
     margin: auto;
     padding: 10px;
+    text-align: center;
+    color: var(--cor4);
+    font-weight: 600;
 }
 
 /**/
 
 body {
-    background-color: var(--cor1);
-    text-align: justify;
+    background-color: var(--cor4);
+    padding-bottom: 30px;
     font-family: var(--texto-padrao);
-    text-indent: 20px;
 }
 
 /**/
 
 main {
-    width: 800px;
+    background-color: #DEEFE7;
+    min-width: 300px;
+    margin: 0px 20px;
+    padding: 10px;
 }
 
 main h1 {
     font-family: var(--titulo-padrao);
     color: var(--cor4);
+    padding: 15px 5px 10px 5px;
+    text-indent: 20px;
 }
 main h2 {
     font-family: var(--titulo-padrao);
+    color: var(--cor3);
+    padding: 15px 5px 10px 5px;
+    text-indent: 20px;
+}
+main h3 {
+    font-family: var(--titulo-padrao);
+    color: var(--cor3);
+    padding: 15px 5px 10px 5px;
+    text-indent: 20px;
+}
+main h4 {
+    font-family: var(--titulo-padrao);
+    color: var(--cor2);
+    padding: 15px 5px 10px 5px;
+    text-indent: 20px;    
+}
+main strong {
+    color: var(--cor4);
+}
+main p {
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+main li {
     color: var(--cor3);
 }
