@@ -31,13 +31,18 @@
 
 
 /*ORGANIZÇÃO DE TABELA DE EXEMPLO NA PRATICA*/
-pre{
+div#ex {
     background-color: rgb(14, 14, 14);
     color: rgb(119, 74, 161);
     font-size: 14px;
-    margin: auto;
-}
+    max-width: 650px;
 
+}
+ div p {
+    line-height: 15px;
+    text-align: left;
+    text-indent: 0px;
+ }
 span {
     color: white;
 }
@@ -54,6 +59,31 @@ span {
     color: rgb(255, 255, 65);
 }
 /*FINAL*/
+
+/*pesquisa*/
+p#teste {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    text-align: right ;
+    bottom: 80px;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--cor2);
+  }
+  a::before {
+    content: '\2705\00A0'
+  }
+  a:hover {
+    color: #159A9C;
+    text-decoration: underline;
+  }
+/*fim pesquisa*/
+
+
 
 
 header {
@@ -120,7 +150,7 @@ main h4 {
 main strong {
     color: var(--cor4);
 }
-main p {
+p {
     line-height: 25px;
     text-align: justify;
     margin-bottom: 10px;
